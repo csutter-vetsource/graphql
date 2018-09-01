@@ -1,0 +1,21 @@
+
+
+type Book {
+    id: Int!
+    name: String!
+    author: Author!
+    inStock(storeId: Int): Boolean
+}
+
+type Author {
+    id: Int!
+    name: String!
+}
+
+type Query {
+    book: Book
+}
+
+schema {
+    query: Query
+}
