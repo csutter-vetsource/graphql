@@ -3,7 +3,6 @@
 type Book {
     id: Int!
     name: String!
-    author: Author!
     inStock(storeId: Int): Boolean
 }
 
