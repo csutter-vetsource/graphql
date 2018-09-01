@@ -11,4 +11,8 @@ class BookResolver implements GraphQLResolver<Book> /* This class is a resolver 
         return new Author(1, "Hello");
     }
 
+    public boolean inStock(Book book, int storeId){
+        return book.isInStock(storeId);
+    }
+
 }
